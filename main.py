@@ -3,6 +3,7 @@ import sys
 import codecs
 from os.path import join
 
+import gi; gi.require_version('Gdk', '3.0') # https://github.com/Ulauncher/Ulauncher/issues/703
 from ulauncher.search.SortedList import SortedList
 from ulauncher.api.client.Extension import Extension
 from ulauncher.api.client.EventListener import EventListener
